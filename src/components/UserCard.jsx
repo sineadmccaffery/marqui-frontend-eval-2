@@ -47,7 +47,7 @@ function UserCard({ user }) {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-slate-300 rounded-lg p-5 pb-10">
+      <div className="flex flex-col items-center bg-slate-300 dark:bg-slate-600 dark:text-white rounded-lg p-5 pb-10">
         <button
           className="flex self-end text-gray-500 hover:text-gray-800 transition"
           onClick={handleFlagUser}
@@ -63,7 +63,7 @@ function UserCard({ user }) {
         </img>
         <h2 className="text-xl mt-4">{user.name.first} {user.name.last}</h2>
         <p>{user.email}</p>
-        <div className="flex items-center mt-2 bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-600">
+        <div className="flex items-center mt-2 bg-gray-100 dark:bg-gray-500 dark:text-white px-3 py-1 rounded-full text-sm font-medium text-gray-600">
             {user.location.country}
         </div>
         <button className="mt-4 w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition" aria-label="View Profile">
